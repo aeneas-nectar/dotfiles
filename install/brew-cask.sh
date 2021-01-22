@@ -13,7 +13,7 @@ user_action_apps=(
   coconutbattery
   disk-inventory-x
   kobo
-  plex-media-server
+  plex-media-player
   sketchup
   webstorm
   iterm2
@@ -25,13 +25,16 @@ apps=(
   firefox
   # homebrew/cask-versions/firefox-developer-edition   # browser
   insomnia                    # API tool
+  Itsycal
+  #kdiff3
+  kaleidoscope
   kitematic
   slack
   sourcetree
   tableplus                   # database IDE tool
   viscosity
   vlc
-  zoomus
+  faas-cli
 )
 
 for app in ${apps[@]}; do

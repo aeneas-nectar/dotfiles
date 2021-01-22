@@ -36,3 +36,14 @@ fi
 # load rslv config
 if [ -f ~/.rslv/.rslvrc ]; then
     source ~/.rslv/.rslvrc
+fi
+
+# git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# load hal rc
+source ~/.hal/.halrc
+
+export PATH=$PATH:~/.platformio/penv/bi
