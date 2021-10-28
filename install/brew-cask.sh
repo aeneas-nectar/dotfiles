@@ -5,36 +5,53 @@
 CASK_LIST=$(brew cask list -1)
 
 user_action_apps=(
+  1password
   alfred
-  adobe-creative-cloud
-  bartender
   dash
-  little-snitch
-  coconutbattery
-  disk-inventory-x
-  kobo
-  plex-media-player
-  sketchup
   webstorm
   iterm2
+  plex
+  plexamp
 )
 
 apps=(
+  adobe-digital-editions
+  affinity-designer
   atom
+  audacity
+  autodesk-fusion360
+  balenaetcher
+  balsamiq-wireframes
+  blackhole-2ch
+  blackhole-16ch
+  blender
+  coconutbattery
+  commitizen
+  discord
   docker
   firefox
-  # homebrew/cask-versions/firefox-developer-edition   # browser
+#   homebrew/cask-versions/firefox-developer-edition   # browser
   insomnia                    # API tool
-  Itsycal
-  #kdiff3
+  jdownloader
+  kdiff3
   kaleidoscope
   kitematic
+  launchpad-manager
+  makemkv
+  meshmixer
+  obs
+  repetier-host
   slack
   sourcetree
+  soundsource
+  steam
   tableplus                   # database IDE tool
+  typora
+  ultimaker-cura
   viscosity
+  virtualbox
   vlc
-  faas-cli
+  zoomus
 )
 
 for app in ${apps[@]}; do

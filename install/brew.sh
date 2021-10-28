@@ -36,14 +36,19 @@ apps=(
   gettext
   highlight
   git
+  git-flow
   go
+  go-task
   htop
   n
   nginx
   iftop
   jq
   openssl
+  pandoc
   python
+  python@3.8
+  python@3.9
   sqlite
   tree
   readline

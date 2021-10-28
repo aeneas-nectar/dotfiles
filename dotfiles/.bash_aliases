@@ -31,9 +31,6 @@ alias sshlogin=sshlogin
 
 ## Resolver repositories
 alias core-services="cd /Code/Core/core-services"
-alias core-client="cd /Code/Core/core-client"
-alias resolver-cli="cd /Code/Core/resolver-cli"
-alias ui-kit="cd /Code/Core/ui-kit"
 
 # PERSONAL Computer aliases
 alias repos="cd /Code/personal"
