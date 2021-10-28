@@ -2,9 +2,17 @@
 
 # Install packages
 
-CASK_LIST=$(brew cask list -1)
+CASK_LIST=$(brew list --cask -1)
 
-user_action_apps=(
+special_apps=(
+  adobe-digital-editions
+  blackhole-2ch
+  blackhole-16ch  # virtual audio patch; pipe audio between applicatilns
+  meshmixer
+  virtualbox
+)
+
+apps=(
   1password
   alfred
   dash
@@ -12,19 +20,14 @@ user_action_apps=(
   iterm2
   plex
   plexamp
-)
-
-apps=(
-  adobe-digital-editions
   affinity-designer
   atom
   audacity
   autodesk-fusion360
   balenaetcher
   balsamiq-wireframes
-  blackhole-2ch
-  blackhole-16ch
   blender
+  bunch
   coconutbattery
   commitizen
   discord
@@ -38,7 +41,6 @@ apps=(
   kitematic
   launchpad-manager
   makemkv
-  meshmixer
   obs
   repetier-host
   slack
@@ -49,7 +51,6 @@ apps=(
   typora
   ultimaker-cura
   viscosity
-  virtualbox
   vlc
   zoomus
 )
@@ -78,15 +79,13 @@ for app in ${apps[@]}; do
   done
 
   if [ "${is_installed}" == "false" ]; then
-    brew cask install ${app}
+    brew install --cask ${app} --no-quarantine
   fi
 done
 
-echo ">>> Installing casks which REQUIRE USER ACTION..."
-echo ""
 
-# INFO(mperrotte): iterate a second time for apps that need user action
-for app in ${user_action_apps[@]}; do
+#======= Special App install - those needing specific intervention
+for app in ${special_apps[@]}; do
   is_installed="false"
   for installed_app in ${CASK_LIST[@]}; do
     # INFO(mperrotte): split the app name to see if it's a tap
@@ -110,9 +109,7 @@ for app in ${user_action_apps[@]}; do
   done
 
   if [ "${is_installed}" == "false" ]; then
-    # TODO(mperrotte): add pause so user can take action
-    brew cask install ${app}
-    # read -n 1 -p "Press enter to continue."
+    brew install --cask ${app} --no-quarantine
   fi
 done
 
