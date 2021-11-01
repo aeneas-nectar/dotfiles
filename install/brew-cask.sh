@@ -41,6 +41,7 @@ apps=(
   kitematic
   launchpad-manager
   makemkv
+  moom
   obs
   repetier-host
   slack

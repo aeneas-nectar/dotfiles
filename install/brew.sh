@@ -46,6 +46,7 @@ apps=(
   jq
   openssl
   pandoc
+  platformio
   python
   python@3.8
   python@3.9
