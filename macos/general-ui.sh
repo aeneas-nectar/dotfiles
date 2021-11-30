@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set computer name
-NAME="Athena"
+NAME="Apollo"
 COMPUTERNAME=$NAME
 HOSTNAME=$NAME
 LOCALHOSTNAME=$NAME
