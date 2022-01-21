@@ -70,4 +70,10 @@ function acp() {
   git push
 }
 
+# which pick branch
+alias wbp="git branch -vv | ipt -u | cut -d ' ' -f 1 | xargs git checkout"
+
+# get IP Address
+alias myip='curl http://ipecho.net/plain; echo'
+
 source $ZSH/oh-my-zsh.sh

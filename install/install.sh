@@ -17,6 +17,12 @@ echo ">>> Installing casks..."
 echo ""
 . "$DOTFILES_DIR/install/brew-cask.sh"
 
+# Install global npm dependencies
+echo ">>> Installing npm dependencies..."
+echo ""
+. "${DOTFILES_DIR}/install/npm.sh"
+
+
 # Bunch of symlinks
 echo ">>> Symlinking files..."
 echo ""
