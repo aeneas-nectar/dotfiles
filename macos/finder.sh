@@ -1,5 +1,12 @@
 #!/bin/bash
 
+export DOTFILES_DIR EXTRA_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+# make utilities available
+. "$DOTFILES_DIR/lib/echoes.sh"
+
+
 defaults write com.apple.finder WarnOnEmptyTrash -bool false    # disable warning on empty trash
 
 

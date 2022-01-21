@@ -29,10 +29,10 @@ apps=(
   blender
   bunch
   coconutbattery
-  commitizen
   discord
   docker
   firefox
+  forklift
 #   homebrew/cask-versions/firefox-developer-edition   # browser
   insomnia                    # API tool
   jdownloader

@@ -1,7 +1,12 @@
 #!/bin/bash
+export DOTFILES_DIR EXTRA_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+# make utilities available
+. "$DOTFILES_DIR/lib/echoes.sh"
 
 # Hide Safari’s sidebar in Top Sites
-defaults write com.apple.Safari ShowSidebarInTopSites -bool false;ok
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false;
 
 
 # "Enable the Develop menu and the Web Inspector in Safari"
@@ -19,7 +24,7 @@ defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Don't send search queries to apple
-efaults write com.apple.Safari SuppressSearchSuggestions -bool true
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 
 # add context menu to show web inspector in WebViews

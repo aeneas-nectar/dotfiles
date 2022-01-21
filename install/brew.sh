@@ -28,6 +28,7 @@ apps=(
   awscli
   bash-git-prompt
   bat
+  commitizen
   curl
   dep
   ffmpeg
@@ -51,6 +52,7 @@ apps=(
   python@3.8
   python@3.9
   sqlite
+  spaceship
   tree
   readline
   ruby

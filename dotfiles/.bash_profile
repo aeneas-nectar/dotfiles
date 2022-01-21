@@ -1,6 +1,6 @@
 [ -r ~/.bash_exports ] && [ -f ~/.bash_exports ] && source ~/.bash_exports
 [ -r ~/.bash_functions ] && [ -f ~/.bash_functions ] && source ~/.bash_functions
-[ -r ~/.bash_aliases ] && [ -f ~/.bash_aliases ] && source ~/.bash_aliases
+[ -r ~/.aliases ] && [ -f ~/.aliases ] && source ~/.aliases
 
 
 # Setup n, a node-version-manager
@@ -47,3 +47,4 @@ fi
 source ~/.hal/.halrc
 
 export PATH=$PATH:~/.platformio/penv/bi
+source ~/.bashrc

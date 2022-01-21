@@ -4,8 +4,8 @@
 # - https://github.com/nicksp/dotfiles/blob/master/osx/set-defaults.sh
 # - https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
-
-
+export DOTFILES_DIR EXTRA_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -16,18 +16,17 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-./create-directories.sh
-./appstore.sh
-./dock.sh
-./finder.sh
-./general-ui.sh
-./inputs.sh
-./photos.sh
-./power.sh
-./safari.sh
-./terminal.sh
-./textedit.sh
-
+. "$DOTFILES_DIR/macos/create-directories.sh"
+. "$DOTFILES_DIR/macos/appstore.sh"
+. "$DOTFILES_DIR/macos/dock.sh"
+. "$DOTFILES_DIR/macos/finder.sh"
+. "$DOTFILES_DIR/macos/general-ui.sh"
+. "$DOTFILES_DIR/macos/inputs.sh"
+. "$DOTFILES_DIR/macos/photos.sh"
+. "$DOTFILES_DIR/macos/power.sh"
+. "$DOTFILES_DIR/macos/safari.sh"
+. "$DOTFILES_DIR/macos/terminal.sh"
+. "$DOTFILES_DIR/macos/textedit.sh"
 
 ###############################################################################
 # Do some clean up work.                                                      #

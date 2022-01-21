@@ -1,4 +1,9 @@
 #!/bin/bash
+export DOTFILES_DIR EXTRA_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+
+# make utilities available
+. "$DOTFILES_DIR/lib/echoes.sh"
 
 mkd() {
     if [ -n "$1" ]; then
@@ -9,7 +14,7 @@ mkd() {
                 print_success "$1"
             fi
         else
-            execute "mkdir -p $1" "$1"
+            eval "mkdir -p $1" "$1"
         fi
     fi
 }
