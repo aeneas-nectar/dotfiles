@@ -39,10 +39,6 @@ echo ">>> Cleaning up..."
 echo ""
 . "$DOTFILES_DIR/bin/dot-cli" clean
 
-# Setup apps
-echo ">>> Executing app specific scripts..."
-echo ""
-. "$DOTFILES_DIR/install/apps.sh"
 
 # NOTE(mperrotte): this must execute last, because it prompts for a restart
 # Setup macos defaults (causes restart, must be last action)

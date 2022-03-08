@@ -2,7 +2,8 @@
 
 BIN_NAME=$(basename "$0")
 COMMAND_NAME=$1
-SUB_COMMAND=$2
+PROFILE=$2
+
 
 ARROW="￫"
 RED='\033[0;31m'
@@ -53,48 +54,49 @@ sub_help() {
   echo
   echo "Commands:"
   echo "    help          This help message"
-  echo "    update        Update packages and pkg managers (OS, brew, node, npm)"
+  echo "    install       This is a full install of all relevant config"
   echo "    clean         Clean up caches (brew, npm)"
   echo "    symlinks      Run symlinks script"
-  echo "    brew          Run brew script"
-  # echo "    node          Run node setup script"
-  echo "    defaults      Run macOS defaults script"
-  # echo "    dock          Run macOS dock script"
-}
-
-sub_update() {
-  # sudo softwareupdate -i -a
-  brew update
-  brew upgrade
-  echo -e "${GREEN}$ARROW Success! Update command finished.${NC}"
+  echo "    apps          Run os-specific application installation"
+  echo "    os            Run os-specific defaults script"
+  echo "    npm           Run npm global dependencies script"
 }
 
 sub_clean() {
+  source "${DOTFILES_DIR}/dotfiles/"
   brew cleanup
   npm cache clean --force
   echo -e "${GREEN}$ARROW Success! Clean command finished.${NC}"
 }
 
+sub_install() {
+  source "${DOTFILES_DIR}/install/install.sh"
+  echo -e "${GREEN}$ARROW Success! Install command finished.${NC}"
+}
+
 sub_symlinks() {
-  source "${DOTFILES_DIR}/install/symlinks.sh"
+  source "${DOTFILES_DIR}/profiles/${PROFILE}/symlinks.sh"
   echo -e "${GREEN}$ARROW Success! Symlinks command finished.${NC}"
 }
 
-sub_brew() {
-  source "${DOTFILES_DIR}/install/brew.sh"
-  echo -e "${GREEN}$ARROW Success! Brew command finished.${NC}"
+sub_os() {
+  source "${DOTFILES_DIR}/profiles/${PROFILE}/os.sh"
+  echo -e "${GREEN}$ARROW Success! OS command finished.${NC}"
 }
 
-sub_defaults() {
-  source "${DOTFILES_DIR}/macos/defaults.sh"
-  echo -e "${GREEN}$ARROW Success! MacOS defaults command finished.${NC}"
+sub_apps() {
+    source "${DOTFILES_DIR}/profiles/${PROFILE}/apps.sh"
+    echo -e "${GREEN}$ARROW Success! Apps command finished.${NC}"
 }
 
-# sub_dock() {
-#   source "${DOTFILES_DIR}/macos/dock.sh"
-#   echo -e "${GREEN}$ARROW Success! MacOS dock command finished.${NC}"
-# }
+sub_npm() {
+  source "${DOTFILES_DIR}/install/npm.sh"
+  echo -e "${GREEN}$ARROW Success! npm global dependencies command finished.${NC}"
 
+}
+
+
+## Run the given command
 case ${COMMAND_NAME} in
   "" | "-h" | "--help")
     sub_help
@@ -109,22 +111,3 @@ case ${COMMAND_NAME} in
     fi
     ;;
 esac
-
-# # TODO(mperrotte): create function to find out where dotfiles repo was cloned to
-# subcmd_setup_bash_do() {
-#   cp ~/dotfiles/shell/bashrc ~/.bashrc
-#   cp ~/dotfiles/shell/bash_profile ~/.bash_profile
-#   cp ~/dotfiles/shell/bash_aliases ~/.aliases
-#   cp ~/dotfiles/shell/bash_functions ~/.bash_functions
-#   source ~/.bashrc
-#   print_success "Bash setup complete."
-# }
-
-# subcmd_setup_bash() {
-#   ask_for_confirmation "Are you sure you want to init bash dotfiles?"
-#   if answer_is_yes; then
-#     subcmd_setup_bash_do
-#   else
-#     print_error "Aborting."
-#   fi
-# }

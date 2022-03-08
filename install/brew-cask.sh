@@ -41,6 +41,7 @@ apps=(
   kitematic
   launchpad-manager
   makemkv
+  meshlab
   moom
   obs
   repetier-host

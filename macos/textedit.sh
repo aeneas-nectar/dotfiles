@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # TextEdit: Set plain text as default format in TextEdit
