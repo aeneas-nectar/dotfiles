@@ -17,7 +17,7 @@ export default class LinuxHome extends Profile {
       'libheif-examples'
     ];
 
-    return runStream(`sudo apt install ${apts.join(' ')}`, [], 'initial');
+    return runStream(`sudo apt install`, apts, 'inherit');
   }
 
   async os () {
