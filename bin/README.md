@@ -1,1 +1,0 @@
-Contains the CLI for managing dotfile setup
