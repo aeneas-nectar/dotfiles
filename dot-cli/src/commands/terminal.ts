@@ -2,7 +2,7 @@ import {Command, Flags} from '@oclif/core'
 import runner_manager from "../lib/profiles/runner_manager";
 
 export default class Terminal extends Command {
-  static description = 'describe the command here'
+  static description = 'setup terminal'
 
   static examples = [
     '<%= config.bin %> <%= command.id %>',

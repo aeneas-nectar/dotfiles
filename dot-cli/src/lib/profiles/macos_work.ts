@@ -4,7 +4,7 @@ import { runStream } from '../process';
 
 export default class MacosWork extends Profile {
   constructor() {
-    super('macos_work');
+    super();
   }
 
   async os () {

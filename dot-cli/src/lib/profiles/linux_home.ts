@@ -2,8 +2,10 @@ import { Profile } from './profile';
 import {runStream} from "../process";
 
 export default class LinuxHome extends Profile {
+  profile = 'linux_home';
+
   constructor() {
-    super('linux_home');
+    super();
   }
 
   async app () {
@@ -17,4 +19,25 @@ export default class LinuxHome extends Profile {
 
     return runStream(`sudo apt install ${apts.join(' ')}`, [], 'initial');
   }
+
+  async os () {
+    return super.os();
+  }
+
+  async clean () {
+    return super.clean();
+  }
+
+  async npm () {
+    return super.npm();
+  }
+
+  async symlinks () {
+    return super.symlinks();
+  }
+
+  async terminal () {
+    return super.terminal();
+  }
+
 }

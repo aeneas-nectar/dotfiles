@@ -3,11 +3,10 @@ import {buildSymlinks, manageFile} from "../symlinkUtils";
 import {repoDir} from "../../config";
 
 export class Profile {
-  profile: string;
+  profile: string = 'no-profile';
 
-  constructor (profile: string) {
-    this.profile = profile;
-  }
+  constructor() {}
+
   async os (): Promise<any> {
     console.log(`os command: ${this.profile}`)
   }
