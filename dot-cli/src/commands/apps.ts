@@ -16,6 +16,6 @@ export default class Apps extends Command {
     this.log(`executing with following profile: ${profile}`);
     const runner = runner_manager(profile);
     await runner.app();
-    this.log(`completed os setup`);
+    this.log(`completed app setup`);
   }
 }

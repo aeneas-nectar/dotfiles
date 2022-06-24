@@ -5,8 +5,6 @@ ENABLE_CORRECTION="true"
 
 ZSH_THEME="spaceship"
 
-source /opt/homebrew/share/zsh/site-functions
-
 # oh-my-zsh plugins
 plugins=(
     docker
