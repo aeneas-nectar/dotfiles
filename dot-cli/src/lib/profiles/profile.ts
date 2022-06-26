@@ -39,7 +39,7 @@ export class Profile {
   async terminal(): Promise<any> {
     await runStream(`git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh`, [], 'inherit');
     await runStream(`git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH/themes/spaceship-prompt" --depth=1`, [], 'inherit');
-    return await manageFile("$ZSH/themes/spaceship-prompt/spaceship.zsh-theme", "$ZSH/themes/spaceship.zsh-theme");
+    return await manageFile("$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme", "$HOME/.oh-my-zsh /themes/spaceship.zsh-theme");
   }
 
 

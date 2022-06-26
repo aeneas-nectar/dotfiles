@@ -1,5 +1,5 @@
 import { Profile } from './profile';
-import {runStream} from "../process";
+import {runStream, run} from "../process";
 
 export default class LinuxHome extends Profile {
   profile = 'linux_home';
@@ -14,7 +14,7 @@ export default class LinuxHome extends Profile {
     // add docker ppa repository: note it's for FOCAL, which differs from
     // the guide on docker, since their script recognizes jolpnir which
     // doesn't have a match
-    await runStream(`echo \                        
+    await runStream(`echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   focal sudo" | stable tee /etc/apt/sources.list.d/docker.list > /dev/nul`, [], 'inherit');
 
@@ -25,7 +25,31 @@ export default class LinuxHome extends Profile {
 
 
   async addDockerContainers () {
-    
+
+  }
+
+  async flatpacks () {
+      const apps = [
+        'org.gimp.GIMP',
+        'org.videolan.VLC',
+        'org.inkscape.Inkscape',
+        'com.vscodium.codium',
+        'org.freecadweb.FreeCAD',
+        'com.ultimaker.cura',
+        'rest.insomnia.Insomnia',
+        'org.jdownloader.JDownloader',
+        'org.gnome.meld',
+        'eu.scarpetta.PDFMixTool',
+        'com.github.taiko2k.avvie',
+        'org.darktable.Darktable',
+        'org.filezillaproject.Filezilla',
+        'com.synology.SynologyDrive',
+        'org.kde.kamoso',
+        'com.github.raibtoffoletto.litteris',
+        'tv.plex.PlexDesktop'
+      ];
+
+      return run(`flatpak install ${apps.join(' ')} -y`);
   }
 
   async app () {
@@ -43,8 +67,10 @@ export default class LinuxHome extends Profile {
       'git-flow',
       'kdeconnect'
     ];
-    
+
     await this.addRepositories();
+
+    await this.flatpacks();
 
     return runStream(`sudo apt install`, apts, 'inherit');
   }
