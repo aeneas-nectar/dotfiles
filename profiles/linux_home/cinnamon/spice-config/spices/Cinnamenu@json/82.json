@@ -175,12 +175,12 @@
         "type": "generic",
         "default": [],
         "value": [
+            "org.gnome.Terminal.desktop",
             "dev.pulsar_edit.Pulsar.desktop:flatpak",
             "1password.desktop",
             "mintinstall.desktop",
             "webapp-manager.desktop",
             "cinnamon-settings-info.desktop",
-            "org.gnome.Terminal.desktop",
             "mintsources.desktop",
             "org.signal.Signal.desktop:flatpak",
             "mintbackup.desktop",
