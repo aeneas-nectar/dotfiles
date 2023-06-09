@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Titancraft
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="/home/andrew/.local/share/ice/icons/Titancraft.png" firefox --class WebApp-Titancraft7412 --profile /home/andrew/.local/share/ice/firefox/Titancraft7412 --no-remote "https://titancraft.com/"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/andrew/.local/share/ice/icons/Titancraft.png
+Categories=GTK;Graphics;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-Titancraft7412
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=https://titancraft.com/
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Fantasy City Generator
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="org.openstreetmap.josm" firefox --class WebApp-FantasyCityGenerator4941 --profile /home/andrew/.local/share/ice/firefox/FantasyCityGenerator4941 --no-remote "https://watabou.itch.io/medieval-fantasy-city-generator"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=org.openstreetmap.josm
+Categories=GTK;WebApps;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-FantasyCityGenerator4941
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=https://watabou.itch.io/medieval-fantasy-city-generator
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

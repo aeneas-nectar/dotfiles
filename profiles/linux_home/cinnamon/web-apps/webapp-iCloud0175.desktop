@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Name=Pages
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="/home/andrew/home/app-settings/web apps/logos/Pages_logo-300x299.png" firefox --class WebApp-iCloud0175 --profile /home/andrew/.local/share/ice/firefox/iCloud0175 --no-remote "https://www.icloud.com/pages"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/andrew/home/app-settings/web apps/logos/Pages_logo-300x299.png
+Categories=GTK;Office;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-iCloud0175
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=https://www.icloud.com/pages
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true
+

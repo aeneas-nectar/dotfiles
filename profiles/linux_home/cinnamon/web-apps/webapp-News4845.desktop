@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=News
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="internet-news-reader" firefox --class WebApp-News4845 --profile /home/andrew/.local/share/ice/firefox/News4845 --no-remote "http://10.0.1.95:8613/i/"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=internet-news-reader
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-News4845
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=http://10.0.1.95:8613/i/
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

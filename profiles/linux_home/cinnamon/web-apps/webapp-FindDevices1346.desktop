@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Find Devices
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="find-location-symbolic" firefox --class WebApp-FindDevices1346 --profile /home/andrew/.local/share/ice/firefox/FindDevices1346 --no-remote "https://www.icloud.com/find/"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=find-location-symbolic
+Categories=GTK;Utility;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-FindDevices1346
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=https://www.icloud.com/find/
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true

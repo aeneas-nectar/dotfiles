@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Name=Reminders
+Comment=Web App
+Exec=sh -c 'XAPP_FORCE_GTKWINDOW_ICON="icloud" firefox --class WebApp-Reminders9728 --profile /home/andrew/.local/share/ice/firefox/Reminders9728 --no-remote "https://www.icloud.com/reminders/"'
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=icloud
+Categories=GTK;Office;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-Reminders9728
+StartupNotify=true
+X-WebApp-Browser=Firefox
+X-WebApp-URL=https://www.icloud.com/reminders/
+X-WebApp-CustomParameters=
+X-WebApp-Navbar=false
+X-WebApp-PrivateWindow=false
+X-WebApp-Isolated=true
+
