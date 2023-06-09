@@ -1,3 +1,4 @@
+#!/bin/bash
 
 ## Albert (Alfred clone)
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
