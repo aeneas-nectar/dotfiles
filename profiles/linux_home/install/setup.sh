@@ -15,6 +15,8 @@
 # npm installation
 . npm.sh
 
+. pip.sh
+
 # os config
 
 # zsh-setup to get ohmyzsh and spaceship setup

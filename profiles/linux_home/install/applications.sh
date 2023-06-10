@@ -7,6 +7,7 @@ apt_apps=(
   htop
   nodejs
   zsh
+  pdftk
 )
 
 for app in ${apt_apps[@]}; do

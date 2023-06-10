@@ -177,6 +177,8 @@
         "value": [
             "org.gnome.Terminal.desktop",
             "dev.pulsar_edit.Pulsar.desktop:flatpak",
+            "org.gnome.meld.desktop",
+            "org.gnome.baobab.desktop",
             "1password.desktop",
             "mintinstall.desktop",
             "webapp-manager.desktop",
@@ -192,9 +194,7 @@
             "webapp-Discord1817.desktop",
             "fr.handbrake.ghb.desktop",
             "cinnamon-settings-desklets.desktop",
-            "redshift-gtk.desktop",
-            "libreoffice-startcenter.desktop",
-            "opensnitch_ui.desktop"
+            "redshift-gtk.desktop"
         ]
     },
     "search-start-folder": {
@@ -668,7 +668,7 @@
     },
     "info3": {
         "type": "label",
-        "description": "\n• Right click on any folder to add it as a menu category.\n"
+        "description": "\n• Folders can be set up and removed as menu categories by right-clicking on them.\n"
     },
-    "__md5__": "f2eac9539d113eddd18ce14976b3d24d"
+    "__md5__": "848f7828a3d7be7a48085ecfef0f1710"
 }
