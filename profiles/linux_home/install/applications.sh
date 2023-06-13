@@ -8,6 +8,10 @@ apt_apps=(
   nodejs
   zsh
   pdftk
+  kate
+  fonts-firacode
+  plank
+  terminator
 )
 
 for app in ${apt_apps[@]}; do
