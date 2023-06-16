@@ -19,8 +19,10 @@
 . pip.sh
 
 # ssh
-. ssh.sh
+#. ssh.sh
 
 # os config
 
 # zsh-setup to get ohmyzsh and spaceship setup
+
+. zsh-setup.sh

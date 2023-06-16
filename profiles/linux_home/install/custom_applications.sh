@@ -8,5 +8,5 @@ apt install albert
 
 # Install 1password
 wget https://downloads.1password.com/linux/debian/amd64/stable/1password-latest.deb -O 1password-latest.deb
-dpkg -i 1password-latest.deb
+sudo dpkg -i 1password-latest.deb
 rm 1password-latest.deb

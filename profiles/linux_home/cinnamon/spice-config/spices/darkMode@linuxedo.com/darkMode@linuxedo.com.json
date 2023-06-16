@@ -66,7 +66,7 @@
         "type": "switch",
         "description": "Dark mode",
         "default": false,
-        "value": true
+        "value": false
     },
     "enable_auto_mode_switch": {
         "type": "switch",
@@ -474,8 +474,6 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "default": "default",
-            "hicolor": "hicolor",
             "Adwaita": "Adwaita",
             "Bibata-Modern-Classic": "Bibata-Modern-Classic",
             "Bibata-Modern-Ice": "Bibata-Modern-Ice",
@@ -578,9 +576,11 @@
             "breeze": "breeze",
             "breeze-dark": "breeze-dark",
             "breeze_cursors": "breeze_cursors",
+            "default": "default",
             "ePapirus": "ePapirus",
             "ePapirus-Dark": "ePapirus-Dark",
             "gnome": "gnome",
+            "hicolor": "hicolor",
             "locolor": "locolor",
             "ubuntu-mono-dark": "ubuntu-mono-dark",
             "ubuntu-mono-light": "ubuntu-mono-light"
@@ -592,8 +592,6 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "default": "default",
-            "hicolor": "hicolor",
             "Adwaita": "Adwaita",
             "Bibata-Modern-Classic": "Bibata-Modern-Classic",
             "Bibata-Modern-Ice": "Bibata-Modern-Ice",
@@ -696,9 +694,11 @@
             "breeze": "breeze",
             "breeze-dark": "breeze-dark",
             "breeze_cursors": "breeze_cursors",
+            "default": "default",
             "ePapirus": "ePapirus",
             "ePapirus-Dark": "ePapirus-Dark",
             "gnome": "gnome",
+            "hicolor": "hicolor",
             "locolor": "locolor",
             "ubuntu-mono-dark": "ubuntu-mono-dark",
             "ubuntu-mono-light": "ubuntu-mono-light"
@@ -742,7 +742,7 @@
         "type": "generic",
         "default": "-1",
         "description": "Internal use",
-        "value": -1
+        "value": 1686952776142
     },
     "__md5__": "fc834ff6d2fbdaac87aaf5a65f3d32ad"
 }

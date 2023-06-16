@@ -12,6 +12,7 @@ apt_apps=(
   fonts-firacode
   plank
   terminator
+  fzf
 )
 
 for app in ${apt_apps[@]}; do
