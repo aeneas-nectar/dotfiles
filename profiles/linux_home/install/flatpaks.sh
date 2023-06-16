@@ -4,7 +4,7 @@ flatpak_apps=(
   org.gimp.GIMP
   org.videolan.VLC
   org.inkscape.Inkscape
-  com.vscodium.codium
+  # com.vscodium.codium
   # org.freecadweb.FreeCAD
   com.ultimaker.cura
   rest.insomnia.Insomnia

@@ -15,7 +15,11 @@
 # npm installation
 . npm.sh
 
+# pipp
 . pip.sh
+
+# ssh
+. ssh.sh
 
 # os config
 
