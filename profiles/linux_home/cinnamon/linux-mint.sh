@@ -4,8 +4,14 @@
 
 RUN_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+
+rm -rf ~./local/share/cinnamon/applets
 ln -srf $RUN_DIR/spices-applets ~/.local/share/cinnamon/applets
+
+rm -rf ~./local/share/cinnamon/extensions
 ln -srf $RUN_DIR/spices-extensions ~/.local/share/cinnamon/extensions
+
+rm -rf ~./config/cinnamon
 ln -srf $RUN_DIR/spice-config ~/.config/cinnamon
 
 ## Link Web apps
