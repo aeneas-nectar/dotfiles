@@ -13,6 +13,7 @@ apt_apps=(
   plank
   terminator
   fzf
+  zeal
 )
 
 for app in ${apt_apps[@]}; do

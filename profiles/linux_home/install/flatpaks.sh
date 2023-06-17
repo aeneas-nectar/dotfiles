@@ -27,6 +27,7 @@ flatpak_apps=(
   com.uploadedlobster.peek
   com.solvespace.SolveSpace
   org.signal.Signal
+  im.riot.Riot
 )
 
 for app in ${flatpak_apps[@]}; do
