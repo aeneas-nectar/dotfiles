@@ -1,28 +1,27 @@
 #!/bin/bash
 
+RUN_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 # setup symlinks to dotfiles so that zsh profile is mapped propperly
-. symlinks.sh
+. $RUN_DIR/symlinks.sh
 
 # apt install to get #!/usr/bin/env zsh
-. applications.sh
+. $RUN_DIR/applications.sh
 
 # flatpak install
-. flatpaks.sh
+. $RUN_DIR/flatpaks.sh
 
 # custom application install
-. custom_applications.sh
+. $RUN_DIR/custom_applications.sh
 
 # npm installation
-. npm.sh
+. $RUN_DIR/npm.sh
 
 # pipp
-. pip.sh
-
-# ssh
-#. ssh.sh
+. $RUN_DIR/pip.sh
 
 # os config
 
 # zsh-setup to get ohmyzsh and spaceship setup
 
-. zsh-setup.sh
+. $RUN_DIR/zsh-setup.sh

@@ -16,5 +16,7 @@ $ cd ~/dotfiles
 
 For Linux:
 ```
-$ ./profiles/linux_home/install/setup.sh  # runs the full sweet
+$ ./profiles/linux_home/install/setup.sh  # runs the full suite
+
+$ dconf dump / > ~/dotfiles/profiles/linux_home/cinnamon/cinnamon_backup # this snapshots the cinnamon settings
 ```

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 apt_apps=(
   ffmpeg
   git
@@ -14,6 +16,9 @@ apt_apps=(
   terminator
   fzf
   zeal
+  wine64
+  vim
+  gparted
 )
 
 for app in ${apt_apps[@]}; do
