@@ -31,7 +31,7 @@ SPACESHIP_PROMPT_ORDER=(
 #  elixir        # Elixir section
 #  xcode         # Xcode section
 #  swift         # Swift section
-  golang        # Go section
+#  golang        # Go section
 #  php           # PHP section
 #  rust          # Rust section
 #  haskell       # Haskell Stack section
@@ -53,10 +53,15 @@ SPACESHIP_PROMPT_ORDER=(
 #  jobs          # Background jobs indicator
 #  exit_code     # Exit code section
 #  char          # Prompt character
-)
+  sudo
 
-SPACESHIP_NODE_DEFAULT_VERSION="v14.17.3"
-SPACESHIP_PROMPT_ADD_NEWLINE=false
+)
+###### SPACESHIP OVERRIDES #######
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_NODE_DEFAULT_VERSION="v12.22.9"
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_BATTERY_THRESHOLD=25
+SPACESHIP_BATTERY_SHOW=true
 
 function acp() {
   git add .

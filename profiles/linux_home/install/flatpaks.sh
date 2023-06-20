@@ -13,7 +13,7 @@ flatpak_apps=(
   eu.scarpetta.PDFMixTool
   # com.github.taiko2k.avvie
   org.darktable.Darktable
-  org.filezillaproject.Filezilla
+  # org.filezillaproject.Filezilla
   com.synology.SynologyDrive
   org.kde.kamoso
   tv.plex.PlexDesktop
@@ -28,6 +28,7 @@ flatpak_apps=(
   com.solvespace.SolveSpace
   org.signal.Signal
   im.riot.Riot
+  com.brave.Browser
 )
 
 for app in ${flatpak_apps[@]}; do
