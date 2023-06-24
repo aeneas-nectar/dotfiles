@@ -75,4 +75,10 @@ alias wbp="git branch -vv | ipt -u | cut -d ' ' -f 1 | xargs git checkout"
 # get IP Address
 alias myip='curl http://ipecho.net/plain; echo'
 
+# setup fzf to use rg by default
+if type rg &> /dev/null; then
+  export FZF_DEFAULT_COMMAND='rg --files'
+  export FZF_DEFAULT_OPTS='-m'
+fi
+
 source $ZSH/oh-my-zsh.sh
