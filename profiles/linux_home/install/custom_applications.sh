@@ -13,3 +13,16 @@ rm 1password-latest.deb
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install wine
+sudo dpkg --add-architecture i386
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+
+# dice roll script
+git clone git@github.com:shadsbot/roll.git ~/Code
+mv ~/Code/roll/roll.py /usr/local/bin/roll
+chmod +x /usr/local/bin/roll
