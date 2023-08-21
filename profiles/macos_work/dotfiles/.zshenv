@@ -11,6 +11,7 @@ export N_DIR="$HOME/n"
 export JIRA_URL="https://resolver.atlassian.net"  # - Your JIRA instance's URL
 export JIRA_NAME="andrew@resolver.com" #- Your JIRA username; used as the default user for assigned/reported searches
 export JIRA_PREFIX="CORE" #- Prefix added to issue ID arguments
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 # CUSTOM EXPORTS
 DOTFILES_EXPORT="$HOME/dotfiles/bin"

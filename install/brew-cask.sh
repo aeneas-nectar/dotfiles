@@ -6,8 +6,6 @@ CASK_LIST=$(brew list --cask -1)
 
 special_apps=(
   adobe-digital-editions
-  blackhole-2ch
-  blackhole-16ch  # virtual audio patch; pipe audio between applicatilns
   meshmixer
   virtualbox
 )
@@ -22,37 +20,39 @@ apps=(
   plexamp
   affinity-designer
   atom
-  audacity
-  autodesk-fusion360
-  balenaetcher
+#  audacity
+#  autodesk-fusion360
+#  balenaetcher
   balsamiq-wireframes
-  blender
+#  blender
   bunch
   coconutbattery
   discord
   docker
   firefox
+  focus
   forklift
-#   homebrew/cask-versions/firefox-developer-edition   # browser
   insomnia                    # API tool
-  jdownloader
+#  jdownloader
   kdiff3
   kaleidoscope
   kitematic
   launchpad-manager
-  makemkv
+#  makemkv
   moom
   obs
-  repetier-host
+#  repetier-host
   slack
-  sourcetree
+#  sourcetree
   soundsource
-  steam
+#  steam
   tableplus                   # database IDE tool
+  tomatoebar
   typora
-  ultimaker-cura
+#  ultimaker-cura
   viscosity
   vlc
+  vscodium
   zoomus
 )
 
