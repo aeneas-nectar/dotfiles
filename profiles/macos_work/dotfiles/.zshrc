@@ -78,3 +78,9 @@ alias wbp="git branch -vv | ipt -u | cut -d ' ' -f 1 | xargs git checkout"
 alias myip='curl http://ipecho.net/plain; echo'
 
 source $ZSH/oh-my-zsh.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+# load hal rc
+source ~/.hal/.halrc
