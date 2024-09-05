@@ -5,55 +5,64 @@
 CASK_LIST=$(brew list --cask -1)
 
 special_apps=(
-  adobe-digital-editions
-  meshmixer
-  virtualbox
+  # adobe-digital-editions
+  # meshmixer
+  # virtualbox
 )
 
 apps=(
   1password
   alfred
+  asana
+  bartender
+  # chrome
   dash
   webstorm
   iterm2
   plex
-  plexamp
+  # plexamp
   affinity-designer
-  atom
+  # atom
 #  audacity
 #  autodesk-fusion360
 #  balenaetcher
-  balsamiq-wireframes
+  # balsamiq-wireframes
 #  blender
   bunch
   coconutbattery
-  discord
+  # discord
   docker
+  elgato-control-center
+  elgato-stream-deck
   firefox
+  fluent-reader
   focus
   forklift
   insomnia                    # API tool
 #  jdownloader
   kdiff3
-  kaleidoscope
+  kaleidoscope@3
   kitematic
   launchpad-manager
 #  makemkv
   moom
+  mutedeck
   obs
 #  repetier-host
-  slack
+  # slack
 #  sourcetree
-  soundsource
+  # soundsource
 #  steam
+  pulsar
+  scroll-reverser
   tableplus                   # database IDE tool
-  tomatoebar
+  # tomatoebar
   typora
 #  ultimaker-cura
-  viscosity
+  # viscosity
   vlc
-  vscodium
-  zoomus
+  # vscodium
+  # zoomus
 )
 
 for app in ${apps[@]}; do
