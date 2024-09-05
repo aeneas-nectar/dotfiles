@@ -17,3 +17,8 @@ defaults write com.apple.dock tilesize -int 36
 
 # Add several spacers
 # defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+
+# stage manager
+defaults write com.apple.WindowManager GloballyEnabled -bool true
+defaults write com.apple.WindowManager AutoHide -bool false
+defaults write com.apple.WindowManager AppWindowGroupingBehavior -bool false
