@@ -3,6 +3,9 @@ import { join } from 'path';
 import { runStream } from '../process';
 
 export default class MacosWork extends Profile {
+
+  profile= "macos_work";
+
   constructor() {
     super();
   }
