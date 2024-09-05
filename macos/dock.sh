@@ -7,7 +7,10 @@ defaults write com.apple.dock static-only -bool true
 # defaults write com.apple.dock launchanim -bool false
 
 # Set minimize animation to scale
-defaults write com.apple.dock mineffect scale
+# defaults write com.apple.dock mineffect scale
+
+# put dock on left
+defaults write com.apple.dock orientation left
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
