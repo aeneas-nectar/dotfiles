@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Set computer name
-NAME="Apollo"
-COMPUTERNAME=$NAME
-HOSTNAME=$NAME
-LOCALHOSTNAME=$NAME
+#NAME="Apollo"
+#COMPUTERNAME=$NAME
+#HOSTNAME=$NAME
+#LOCALHOSTNAME=$NAME
 
 # Set computer name (as done via System Preferences -> Sharing)
-sudo scutil --set ComputerName $COMPUTERNAME
-sudo scutil --set HostName $HOSTNAME
-sudo scutil --set LocalHostName $LOCALHOSTNAME
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
+#sudo scutil --set ComputerName $COMPUTERNAME
+#sudo scutil --set HostName $HOSTNAME
+#sudo scutil --set LocalHostName $LOCALHOSTNAME
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $LOCALHOSTNAME
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
