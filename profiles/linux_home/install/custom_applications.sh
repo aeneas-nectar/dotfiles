@@ -26,3 +26,7 @@ sudo apt install --install-recommends winehq-stable
 git clone git@github.com:shadsbot/roll.git ~/Code
 mv ~/Code/roll/roll.py /usr/local/bin/roll
 chmod +x /usr/local/bin/roll
+
+# novelwriter
+sudo add-apt-repository ppa:vkbo/novelwriter
+sudo apt install novelwriter

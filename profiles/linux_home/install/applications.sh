@@ -20,6 +20,7 @@ apt_apps=(
   vim             # cli text editor
   gparted         # partition manager
   ripgrep         # regex grep for vim
+  entangle        # remote for SLR
 )
 
 for app in ${apt_apps[@]}; do

@@ -12,7 +12,7 @@ flatpak_apps=(
   org.gnome.meld
   eu.scarpetta.PDFMixTool
   # com.github.taiko2k.avvie
-  org.darktable.Darktable
+  # org.darktable.Darktable
   # org.filezillaproject.Filezilla
   com.synology.SynologyDrive
   org.kde.kamoso
@@ -21,7 +21,7 @@ flatpak_apps=(
   org.flameshot.Flameshot
   io.typora.Typora
   com.protonvpn.www
-  dev.pulsar_edit.Pulsar
+#  dev.pulsar_edit.Pulsar
   org.raspberrypi.rpi-imager
   com.makemkv.MakeMKV
   com.uploadedlobster.peek
@@ -29,6 +29,16 @@ flatpak_apps=(
   org.signal.Signal
   im.riot.Riot
   com.brave.Browser
+  com.rawtherapee.RawTherapee
+  org.gnome.Brasero
+  com.jetbrains.WebStorm
+  dev.zed.Zed
+  org.musicbrainz.Picard
+  net.meshlab.MeshLab
+  org.openscad.OpenSCAD
+  net.sourceforge.Hugin
+  org.zealdocs.Zeal
+  us.zoom.Zoom
 )
 
 for app in ${flatpak_apps[@]}; do
